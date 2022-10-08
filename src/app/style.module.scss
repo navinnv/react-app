@@ -1,0 +1,48 @@
+.sliderContainer {
+    position: relative;
+    padding: 10px 0;
+    height: 320px;
+    overflow: hidden;
+    .arrow {
+        .icon {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: #fff;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            background-color: #0000005e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon.prev {
+            left: 10px;
+        }
+        .icon.next {
+            right: 10px;
+        }
+    }
+    .dots {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        column-gap: 5px;
+        cursor: pointer;
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #0000005e;
+            border-radius: 50%;
+        }
+        .dot.active {
+            background-color: #000;
+        }
+    }
+}
