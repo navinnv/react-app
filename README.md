@@ -1,7 +1,8 @@
-npm install
-npm start
+    npm install
+    npm start
 
 Todo:
+
     es6
     sass
     react-router
